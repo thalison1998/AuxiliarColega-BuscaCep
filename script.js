@@ -23,7 +23,7 @@ const fetchCep = async (value) => {
     if (json.erro != true) {
       createElement(json);
     } else {
-      throw new Error("CPF não encontrado");
+      throw new Error("CEP não encontrado");
     }
   } catch (err) {
     alert(err.message);
